@@ -13,9 +13,17 @@ function App() {
         <Card />
         <Card />
         <Card />
-        <Button />
+        <Ball />
+        <Ball />
+        <Ball />
         <Ball />
       </div>
+      <div>
+        <Button />
+        <Button />
+        <Button />
+      </div>
+
     </>
   )
 }
