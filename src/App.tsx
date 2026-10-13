@@ -8,13 +8,18 @@ function App() {
   return (
     <>
       <h1>Willkommen</h1>
-
       <div className='cardcontainer'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <div>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div>
+
+        </div>
+
       </div >
     </>
   )
