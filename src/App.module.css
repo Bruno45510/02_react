@@ -1,15 +1,10 @@
-h1 {
+.title {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.card {
-    border: 1px solid black;
-    border-radius: 12px;
-    padding: 1rem;
-}
-
 .cardcontainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }

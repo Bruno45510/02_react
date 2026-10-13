@@ -1,26 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './card'
+import Card from './Card'
+import styles from './App.module.css'
+import Button from './Button'
+import Ball from './Ball'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Willkommen</h1>
-      <div className='cardcontainer'>
-        <div>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-        <div>
-
-        </div>
-
-      </div >
+      <h1 className={styles.title}>Willkommen</h1>
+      <div className={styles.cardcontainer}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Button />
+        <Ball />
+      </div>
     </>
   )
 }
