@@ -8,7 +8,6 @@ type Props = {
 export default function Card({ title, text, img }: Props) {
     const random = Math.random();
     const link: string = img + "?id=" + random;
-    console.log(link);
 
 
     return (
@@ -17,7 +16,6 @@ export default function Card({ title, text, img }: Props) {
             <img src={link} alt="Hero" />
             <p>{text}</p>
             <div>{random}</div>
-            <p>{link}</p>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Ball from './Ball'
 
 function App() {
   const imageUrl: string = "https://picsum.photos/200/300";
+  const image: String = "https://picsum.photos/200/300/?blur"
   return (
     <>
       <h1 className={styles.title}>Willkommen</h1>
@@ -20,9 +21,9 @@ function App() {
         <Ball title="messi" texte="ronaldo" />
       </div>
       <div>
-        <Button />
-        <Button />
-        <Button />
+        <Button img={image} />
+        <Button img={image} />
+        <Button img={image} />
       </div>
 
     </>
