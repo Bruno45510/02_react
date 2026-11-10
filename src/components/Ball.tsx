@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './Ball.module.css'
 
 type Props = {
@@ -6,6 +7,7 @@ type Props = {
 }
 
 export default function Ball({ title, texte }: Props) {
+    const [counter, setcounter] = useState(Math.floor(Math.random() + 1));
     return (
         <div className={styles.Ball}>
             <div className={styles.Messi}>
@@ -17,6 +19,11 @@ export default function Ball({ title, texte }: Props) {
             <div className={styles.Ronaldo}>
                 {texte}
             </div>
+            <div>Amount of {title} wins</div>
+            <div>={counter}</div>
+            <button onClick={() => {
+                setcounter(Math.random())
+            }}>make {title} lose</button>
         </div>
 
     )
