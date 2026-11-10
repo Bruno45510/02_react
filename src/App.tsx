@@ -1,7 +1,7 @@
-import Card from './Card'
+import Card from './Card.tsx'
 import styles from './App.module.css'
-import Button from './Button'
-import Ball from './Ball'
+import Button from './Button.tsx'
+import Ball from './Ball.tsx'
 
 function App() {
   const imageUrl: string = "https://picsum.photos/200/300";
